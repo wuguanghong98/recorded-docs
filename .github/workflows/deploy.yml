@@ -18,6 +18,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: .
+          token: ${{ secrets.GIT_PAGES_TOKEN }} # secret 名
 
       # 部署到 GitHub pages
       # - name: Deploy
