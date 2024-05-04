@@ -26,5 +26,3 @@ jobs:
         #   commit_message: deploy project
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: ./
