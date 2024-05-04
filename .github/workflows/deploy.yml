@@ -20,6 +20,7 @@ jobs:
           folder: .
           token: ${{ secrets.GIT_PAGES_TOKEN }} # secret 名
 
+      # https://github.com/marketplace/actions/gitee-pages-action
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         env:
