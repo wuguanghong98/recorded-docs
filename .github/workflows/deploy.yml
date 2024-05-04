@@ -1,4 +1,4 @@
-name: deploy
+name: deploy-demo
 
 on:
   push:
@@ -11,9 +11,13 @@ jobs:
 
       # 下载源码
       # 这一步就是检出你的仓库并下载里面的代码到runner中,actions/checkout@v2是官方自己造的轮子，直接拿来用就行
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
 
       # 部署到 GitHub pages
       # - name: Deploy
@@ -24,5 +28,3 @@ jobs:
         #   user_name: ${{ secrets.MY_USER_NAME }}
         #   user_email: ${{ secrets.MY_USER_EMAIL }}
         #   commit_message: deploy project
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
