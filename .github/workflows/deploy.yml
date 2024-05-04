@@ -16,11 +16,15 @@ jobs:
 
 
       # 部署到 GitHub pages
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@latest # 使用部署到 GitHub pages 的 action
+      # - name: Deploy
+        # uses: peaceiris/actions-gh-pages@latest # 使用部署到 GitHub pages 的 action
+        # with:
+        #   publish_dir: ./ # 部署打包后的 dist 目录
+        #   github_token: ${{ secrets.GIT_PAGES_TOKEN }} # secret 名
+        #   user_name: ${{ secrets.MY_USER_NAME }}
+        #   user_email: ${{ secrets.MY_USER_EMAIL }}
+        #   commit_message: deploy project
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          publish_dir: ./ # 部署打包后的 dist 目录
-          github_token: ${{ secrets.GIT_PAGES_TOKEN }} # secret 名
-          user_name: ${{ secrets.MY_USER_NAME }}
-          user_email: ${{ secrets.MY_USER_EMAIL }}
-          commit_message: deploy project
+          folder: ./
