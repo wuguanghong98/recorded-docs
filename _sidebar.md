@@ -1,4 +1,1 @@
 - [README.md](./README.md)
-- docs
-  - [guide.md](./docs/guide.md)
-- [_sidebar.md](./_sidebar.md)
