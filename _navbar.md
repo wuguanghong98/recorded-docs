@@ -2,4 +2,4 @@
 - 常用网址
   - [百度](https://www.baidu.com)
   - [Google](https://www.google.com/)
-- [工具记录](docs/工具记录/翻译工具/百度翻译.md)
+- [工具记录](docs/工具记录/快捷键汇总.md)
